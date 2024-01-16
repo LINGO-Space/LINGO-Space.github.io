@@ -136,7 +136,7 @@
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
+    <div class="hero-body" style="display: flex;  flex-direction: column;">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <source src="static/videos/composite.mp4"
         type="video/mp4">
@@ -184,6 +184,8 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">Results</h2>
+      <h2 class="title is-4">Qualitative results</h2>
       <div id="results-carousel" class="carousel results-carousel" style="align-items: center;">
         <div class="item item-video1" style="display: flex; justify-content: center;">
           <div style="display: flex;  flex-direction: column;">
@@ -213,20 +215,33 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Results</h2>
+      <h2 class="title is-4">Quantitative results</h2>
       <div id="framework" style="text-align: center;">
         <img src="static/images/result_0.png" alt="lingo-space result 0">
         <div class="subtitle has-text-justified" style="display: flex; justify-content: center; text-align: center;">
-          <b>Table 1.</b> Evaluation (success score) on our 4 benchmark tasks with new predicates: close and far.
+          Table 1. Evaluation (success score) on our 4 benchmark tasks with new predicates: close and far.
         </div>
         <img src="static/images/result_1.png" alt="lingo-space result 1">
         <div class="subtitle has-text-justified" style="display: flex; justify-content: center; text-align: center;">
-          <b>Table 2.</b> Evaluation (success score) on 4 benchmark tasks with multiple referring expressions. The number in the parentheses is the result of the literature.        </div>
+          Table 2. Evaluation (success score) on 4 benchmark tasks with multiple referring expressions. The number in the parentheses is the result of the literature.        </div>
       </div>
     </div>
   </div>
 </section>
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-4">Real-world demonstration</h2>
+      <div id="framework" style="text-align: center;">
+        <img src="static/images/blur_demo.png" alt="lingo-space real world demo">
+        <div class="subtitle has-text-justified" style="text-align: left;">
+          Real-world demonstration of space grounding using a quadruped robot. (a) is the given instruction; (b) is the output phrases of the semantic parser; (c) and (d) are spatial distributions of the first and the second phrase; (e) is the final spatial distribution; (f) and (g) is the robot’s navigation trajectories in different views.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- Image carousel -->
 <!-- <section class="hero is-small">
   <div class="hero-body">
